@@ -25,6 +25,7 @@ const NavigationBar = () => {
                         <li className='mr-2'><Link to='/mytoys'>My Toys</Link></li>
                         <li className='mr-2'><Link to='addtoys'>Add A Toy</Link></li>
                         <li><Link to='/blogs'>Blogs</Link></li>
+                        <li><Link to='/login'>Login</Link></li>
 
                     </ul>
                 </div>

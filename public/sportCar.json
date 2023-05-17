@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Porsche 911 GT3",
+        "picture": "https://i.ibb.co/R0n8V8P/sport-Car3.jpg",
+        "price": 10,
+        "rating": 4.5
+    },
+    {
+        "name": "Huracan 911 GT3",
+        "picture": "https://i.ibb.co/KqR2nkG/sport-Car1.jpg",
+        "price": 10,
+        "rating": 4.5
+    },
+    {
+        "name": "Ferrari 488 GTB",
+        "picture": "https://i.ibb.co/Qv9Sv7f/sport-Car2.webp ",
+        "price": 10,
+        "rating": 4.5
+    }
+]

@@ -1,0 +1,44 @@
+{
+    "policeCars": [
+        {
+            "name": "Ford Police Interceptor Utility",
+            "picture": "https://i.ibb.co/23G5dnX/police1.jpg",
+            "price": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "Dodge Charger Pursuit",
+            "picture": "https://i.ibb.co/Xp2LfTs/police2.jpg",
+            "price": 10,
+            "rating": 4.5
+        }
+    ],
+    "sportCars": [
+        {
+            "name": "Porsche 911 GT3",
+            "picture": "https://i.ibb.co/R0n8V8P/sport-Car3.jpg",
+            "price": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "Ferrari 488 GTB",
+            "picture": "https://i.ibb.co/Qv9Sv7f/sport-Car2.webp ",
+            "price": 10,
+            "rating": 4.5
+        }
+    ],
+    "truckToys": [
+        {
+            "name": "Ford F-150",
+            "picture": "https://i.ibb.co/6BZMYZ8/track1.webp",
+            "price": 10,
+            "rating": 4.5
+        },
+        {
+            "name": "Dodge Ram 1500",
+            "picture": "https://i.ibb.co/cckmnN5/tack.jpg",
+            "price": 10,
+            "rating": 4.5
+        }
+    ]
+}
