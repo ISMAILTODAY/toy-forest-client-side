@@ -87,7 +87,7 @@ const Ragistration = () => {
                         </form>
                         <div className='flex justify-center items-center flex-col-reverse '>
                             <p className='bg-primary p-2 rounded text-white mb-3 '> <button onClick={handleGoogleLogin} ><FaGoogle className='inline  '></FaGoogle> Login with Google</button></p>
-                            {/* <p className='bg-primary p-2 rounded text-white mb-3 </FaGithub>b</button></p> */}
+                            {/*</FaGithub>b</button></p> */}
                         </div>
                     </div>
                 </div>
