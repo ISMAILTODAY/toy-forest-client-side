@@ -1,13 +1,11 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../ProviderContext/AuthProvider';
-import { onAuthStateChanged } from 'firebase/auth';
 import { Helmet } from "react-helmet";
 
 const Login = () => {
     const [error, setError] = useState('')
-    // console.log(user)
     const navigate = useNavigate();
     const location = useLocation();
     const { signUp, signInWithGoogle } = useContext(AuthContext);
@@ -86,7 +84,6 @@ const Login = () => {
                     </form>
                     <div className='flex justify-center items-center flex-col-reverse '>
                         <p className='bg-primary p-2 rounded text-white mb-3 '> <button onClick={handleGoogleLogin} ><FaGoogle className='inline  '></FaGoogle> Login with Google</button></p>
-                        {/* <p className='bg-primary p-2 rounded text-white mb-3 '><button > <FaGithub className='inline '></FaGithub> Login with Github</button></p> */}
                     </div>
                 </div>
             </div>
