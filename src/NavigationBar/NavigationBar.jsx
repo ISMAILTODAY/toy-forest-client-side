@@ -40,7 +40,7 @@ const NavigationBar = () => {
                     </div>
                     <div className='relative ml-5 '>
                         <img className='w-[15%]' src="https://i.ibb.co/WBnyftb/download-removebg-preview.png" alt="" /> <br />
-                        <h1 className='absolute top-7 font-semibold text-2xl'>Toy Forest</h1>
+                        <h1 className='absolute top-7 font-semibold text-2xl'>TOY FOREST</h1>
                     </div>
                 </div>
                 <div className="navbar-center hidden lg:flex">

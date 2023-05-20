@@ -6,19 +6,26 @@ import { Helmet } from "react-helmet";
 const MyToys = () => {
     const { user, loading } = useContext(AuthContext)
     const [userToy, setUsertoy] = useState([])
+    const [ascending, setAscending] = useState('1')
     console.log(user.email)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/alldata?email=${user.email}`)
+        fetch(`https://toy-market-server-site.vercel.app/alldata?email=${user.email}&sort=${ascending}`)
             .then(res => res.json())
             .then(data => setUsertoy(data))
-    }, [])
+    }, [ascending])
+    const handleAscending = () => {
+        setAscending("-1")
+    }
+    const handleDscending = () => {
+        setAscending("1")
+    }
 
     const handleDelete = (id) => {
         console.log(id)
         const proceed = confirm("Are you sure?")
         if (proceed) {
-            fetch(`http://localhost:5000/alldata/${id}`, {
+            fetch(`https://toy-market-server-site.vercel.app/alldata/${id}`, {
                 method: "DELETE"
             })
                 .then(res => res.json())
@@ -41,7 +48,10 @@ const MyToys = () => {
                 <title>TF -MyToys</title>
             </Helmet>
             <p className='text-4xl font-semibold mb-5'> Total Toy Added {userToy.length}</p>
-            <button className='btn btn-primary'>sort</button>
+            <div className='flex justify-end gap-10 absolute top-20 right-10'>
+                <button onClick={handleAscending} className='btn btn-primary'>Sort by Descending</button>
+                <button onClick={handleDscending} className='btn btn-primary'>Sort by Ascending</button>
+            </div>
             <div className="">
                 <table className=" table table-compact w-full">
                     <thead>
@@ -53,8 +63,8 @@ const MyToys = () => {
                             <th>Price</th>
                             <th>Available Quantity</th>
 
-                            <th></th>
-                            <th></th>
+                            <th>Edit</th>
+                            <th>delete</th>
 
                         </tr>
                     </thead>

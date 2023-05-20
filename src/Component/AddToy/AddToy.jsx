@@ -22,7 +22,7 @@ const AddToy = () => {
         const description = form.detail.value;
         console.log(seller, email, toyName, category, photo, quantity, price, rating, description)
         const addToys = { seller, email, toyName, category, photo, quantity, price, rating, description }
-        fetch('http://localhost:5000/alldata', {
+        fetch('https://toy-market-server-site.vercel.app/alldata', {
             method: "POST",
             headers: {
                 "content-type": "application/json"
@@ -31,6 +31,9 @@ const AddToy = () => {
         })
             .then(res => res.json())
             .then(data => {
+                if (data.insertedId) {
+                    alert("Toy added successfully")
+                }
                 console.log(data)
             })
     }

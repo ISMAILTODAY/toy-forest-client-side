@@ -185,6 +185,7 @@ const Home = () => {
                             <input type="text" placeholder="Your Email" className="input input-bordered input-secondary w-full max-w-xs " />
                             <input type="text" placeholder="Toy Name" className="input input-bordered input-secondary w-full max-w-xs " />
                             <input type="text" placeholder="Quantity" className="input input-bordered input-secondary w-full max-w-xs " />
+                            <input type="text" placeholder="Address" className="input input-bordered input-secondary w-full max-w-xs " />
                             <button className='btn btn-primary  '>Send</button>
                         </div>
                         <div

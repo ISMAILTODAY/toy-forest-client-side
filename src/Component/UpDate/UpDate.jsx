@@ -26,7 +26,7 @@ const UpDate = () => {
         console.log(quantity, price, description)
         const updated = { quantity, price, description }
 
-        fetch(`http://localhost:5000/alldata/${id}`, {
+        fetch(`https://toy-market-server-site.vercel.app/alldata/${id}`, {
             method: "PUT",
             headers: {
                 "content-type": "application/json"

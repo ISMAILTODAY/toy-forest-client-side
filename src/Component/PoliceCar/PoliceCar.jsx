@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaStar, FaStarHalfAlt } from 'react-icons/fa';
 import { Helmet } from "react-helmet";
 
 const PoliceCar = ({ policeCar }) => {
@@ -14,7 +15,7 @@ const PoliceCar = ({ policeCar }) => {
                 <div className="card-body">
                     <h2 className="card-title">{name}</h2>
                     <p>Price: {price}</p>
-                    <p>Rating: {rating}</p>
+                    <p>Rating: {rating} <FaStar className='inline text-yellow-400'></FaStar><FaStar className='inline text-yellow-400'></FaStar><FaStar className='inline text-yellow-400'></FaStar><FaStar className='inline text-yellow-400'></FaStar><FaStarHalfAlt className='inline text-yellow-400'></FaStarHalfAlt></p>
                     <div className="card-actions justify-end">
                         <Link><button className="btn btn-primary">Show Details</button></Link>
                     </div>
