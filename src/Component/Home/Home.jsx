@@ -6,8 +6,7 @@ import PoliceCar from '../PoliceCar/PoliceCar';
 import TruckCar from '../truckCar/truckCar';
 import { Helmet } from "react-helmet";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
+import 'aos/dist/aos.css';
 AOS.init();
 
 
@@ -17,12 +16,11 @@ const Home = () => {
         fetch('fakeData.json')
             .then(res => res.json())
             .then(data => {
-                // console.log(data)
                 setToys(data)
             })
     }, [])
     const { policeCars, sportCars, truckToys } = toys;
-    // console.log(toys[0])
+
     return (
         <div className='mt-24' >
             <Helmet>
