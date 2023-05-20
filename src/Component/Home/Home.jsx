@@ -22,7 +22,7 @@ const Home = () => {
     const { policeCars, sportCars, truckToys } = toys;
 
     return (
-        <div className='mt-24' >
+        <div className='mt-19' >
             <Helmet>
                 <title>TF -Home</title>
             </Helmet>
