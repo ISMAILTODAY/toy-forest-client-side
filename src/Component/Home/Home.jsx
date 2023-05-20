@@ -29,28 +29,28 @@ const Home = () => {
             <div>
                 <div className="carousel w-full h-[32rem] ">
                     <div id="slide1" className="carousel-item relative w-full">
-                        <img src="https://i.ibb.co/m40bfwK/slide1.jpg" className=" w-full" />
+                        <img src="https://images.unsplash.com/photo-1447931958677-954446df5f70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dG95JTIwdHJ1Y2t8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60" className=" w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide4" className="btn btn-circle">❮</a>
                             <a href="#slide2" className="btn btn-circle">❯</a>
                         </div>
                     </div>
                     <div id="slide2" className="carousel-item relative w-full">
-                        <img src="https://i.ibb.co/h8DVW14/slide2.jpg" className=" w-full" />
+                        <img src="https://images.unsplash.com/photo-1590912710590-4365e6e23c8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRveSUyMHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" className=" w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide1" className="btn btn-circle">❮</a>
                             <a href="#slide3" className="btn btn-circle">❯</a>
                         </div>
                     </div>
                     <div id="slide3" className="carousel-item relative w-full">
-                        <img src="https://i.ibb.co/P5SWv5h/slide3.jpg" className="w-full" />
+                        <img src="https://images.unsplash.com/photo-1603008872397-17ede12ec8fe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRveSUyMHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" className="w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide2" className="btn btn-circle">❮</a>
                             <a href="#slide4" className="btn btn-circle">❯</a>
                         </div>
                     </div>
                     <div id="slide4" className="carousel-item relative w-full">
-                        <img src="https://i.ibb.co/p1V4MRs/slide4.jpg" className=" w-full" />
+                        <img src="https://images.unsplash.com/photo-1516842632457-2123868c0583?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHRveSUyMHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" className=" w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                             <a href="#slide3" className="btn btn-circle">❮</a>
                             <a href="#slide1" className="btn btn-circle">❯</a>
