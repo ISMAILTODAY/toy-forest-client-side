@@ -30,7 +30,6 @@ const BlogPage = () => {
 
                 </h1>
                 <p >Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. The stages make up what is known as a pipeline. The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline.</p>
-                {/* <p className=''>We should store them in HTTP Cookies storage in client side.</p> */}
             </div>
         </div>
     );
