@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { FaGithub, FaGoogle } from 'react-icons/fa';
+import { FaGoogle } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../ProviderContext/AuthProvider';
 import { Helmet } from "react-helmet";
