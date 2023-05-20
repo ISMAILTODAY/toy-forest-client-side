@@ -1,9 +1,13 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 const TruckCar = ({ truckToy }) => {
     const { name, picture, price, rating } = truckToy;
     return (
         <div>
+            {/* <Helmet>
+                <title>TF -Truck</title>
+            </Helmet> */}
             <div className="card w-full bg-base-100 shadow-xl">
                 <figure><img className='w-[50%]' src={picture} alt="Shoes" /></figure>
                 <div className="card-body">

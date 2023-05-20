@@ -4,11 +4,17 @@ import 'react-tabs/style/react-tabs.css';
 import SportCar from '../SportCar/SportCar';
 import PoliceCar from '../PoliceCar/PoliceCar';
 import TruckCar from '../truckCar/truckCar';
+import { Helmet } from "react-helmet";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
+
 
 const Home = () => {
-    const [toys, setToys] = useState({})
+    const [toys, setToys] = useState([])
     useEffect(() => {
-        fetch('policeCar.json')
+        fetch('fakeData.json')
             .then(res => res.json())
             .then(data => {
                 // console.log(data)
@@ -16,11 +22,14 @@ const Home = () => {
             })
     }, [])
     const { policeCars, sportCars, truckToys } = toys;
-    // console.log(policeCar)
+    // console.log(toys[0])
     return (
-        <div >
+        <div className='mt-24' >
+            <Helmet>
+                <title>TF -Home</title>
+            </Helmet>
             <div>
-                <div className="carousel w-full h-[32rem]">
+                <div className="carousel w-full h-[32rem] ">
                     <div id="slide1" className="carousel-item relative w-full">
                         <img src="https://i.ibb.co/m40bfwK/slide1.jpg" className=" w-full" />
                         <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -56,7 +65,7 @@ const Home = () => {
             {/* gallary section */}
 
 
-            <div className='px-48'>
+            <div className='md:px-48'>
                 <section>
                     <h1 className='text-center md:text-5xl my-5 font-semibold'>Toy Gallary</h1>
                     <div className='grid md:grid-cols-3 gap-5 my-12'>
@@ -139,6 +148,57 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
+                {/* Services */}
+                <section className=''>
+                    <h1 className='text-center text-5xl font-bold my-24'>Our Services</h1>
+
+                    <div>
+                        <div className='md:flex justify-center items-center gap-12'>
+                            <div
+                                data-aos="fade-right"
+                                data-aos-delay="10"
+                                data-aos-duration="2000"
+                                className='border shadow p-3'
+                            >
+                                <img src="https://i.ibb.co/XbfWqfc/wholseel.png" alt="" />
+                                <h1 className='text-center text-3xl font-semibold'>Wholesale</h1>
+                            </div>
+                            <div
+                                data-aos="fade-left"
+                                data-aos-delay="10"
+                                data-aos-duration="2000"
+                                className='border shadow p-5'
+                            >
+                                <img src="https://i.ibb.co/sJpPMK5/home.jpg" alt="" />
+                                <h1 className='text-center text-3xl font-semibold'>Home Delivery</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* order section */}
+
+                <section>
+                    <h1 className='text-center text-5xl font-bold mt-10'>Order Your Toy</h1>
+                    <div className='md:flex justify-between items-center'>
+                        <div className='md:flex flex-col gap-y-5'>
+                            <input type="text" placeholder="Your Email" className="input input-bordered input-secondary w-full max-w-xs " />
+                            <input type="text" placeholder="Toy Name" className="input input-bordered input-secondary w-full max-w-xs " />
+                            <input type="text" placeholder="Quantity" className="input input-bordered input-secondary w-full max-w-xs " />
+                            <button className='btn btn-primary  '>Send</button>
+                        </div>
+                        <div
+                            data-aos="fade-left"
+                            data-aos-delay="5"
+                            data-aos-duration="2000"
+                            className='w-[50%]'
+                        >
+                            <img src="https://i.ibb.co/svxmTFJ/order.png" alt="" />
+                        </div>
+                    </div>
+                </section>
+
+
             </div>
         </div>
     );
