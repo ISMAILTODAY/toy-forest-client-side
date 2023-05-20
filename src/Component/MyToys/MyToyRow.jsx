@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaEdit, FaTrashAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 
@@ -16,8 +17,8 @@ const MyToyRow = ({ toy, handleDelete }) => {
             <td>{price}</td>
             <td>{quantity}</td>
 
-            <td><Link to={`/update/${_id}`}><button className='btn btn-primary'>Update</button></Link></td>
-            <td><button onClick={() => handleDelete(_id)} className='btn btn-primary'>Delete</button></td>
+            <td><Link to={`/update/${_id}`}><button className=''><FaEdit></FaEdit></button></Link></td>
+            <td><button onClick={() => handleDelete(_id)} className=''><FaTrashAlt></FaTrashAlt></button></td>
         </tr>
     );
 };

@@ -73,14 +73,14 @@ const Login = () => {
                             <label className="label">
                                 <span className="label-text">Password</span>
                             </label>
-                            <input type="text" name='password' placeholder="password" className="input input-bordered" />
+                            <input type="password" name='password' placeholder="password" className="input input-bordered" />
                             <label className="label">
                                 <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                             </label>
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Login</button>
-                            <p>New on this site? <Link to="/registration">Registration</Link></p>
+                            <p>New on this site? <Link className='text-indigo-600 underline' to="/registration">Registration</Link></p>
                             <p className='text-red-600'>{error}</p>
                         </div>
                     </form>

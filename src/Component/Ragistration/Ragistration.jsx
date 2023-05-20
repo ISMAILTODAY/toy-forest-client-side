@@ -75,18 +75,18 @@ const Ragistration = () => {
                                 <label className="label">
                                     <span className="label-text">Password</span>
                                 </label>
-                                <input type="text" name='password' placeholder="password" className="input input-bordered" required />
+                                <input type="password" name='password' placeholder="password" className="input input-bordered" required />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Registration</button>
-                                <p>Already have an account? <Link to="/login">Login</Link></p>
+                                <p>Already have an account? <Link className='text-indigo-600 underline' to="/login">Login</Link></p>
                             </div>
                         </form>
                         <div className='flex justify-center items-center flex-col-reverse '>
-                            <p className='bg-primary p-2 rounded text-white mt-3 '> <button onClick={handleGoogleLogin} ><FaGoogle className='inline  '></FaGoogle> Login with Google</button></p>
+                            <p className='bg-primary p-2 rounded text-white mb-3 '> <button onClick={handleGoogleLogin} ><FaGoogle className='inline  '></FaGoogle> Login with Google</button></p>
                             {/* <p className='bg-primary p-2 rounded text-white mb-3 '><button > <FaGithub className='inline  '></FaGithub> Login with Github</button></p> */}
                         </div>
                     </div>
