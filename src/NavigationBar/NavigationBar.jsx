@@ -4,13 +4,11 @@ import { AuthContext } from '../Component/ProviderContext/AuthProvider';
 
 const NavigationBar = () => {
     const { user, logOut } = useContext(AuthContext);
-    console.log(user)
 
     const handleLogOut = () => {
         logOut()
             .then()
             .catch(error => {
-                console.log(error)
             })
     }
     return (

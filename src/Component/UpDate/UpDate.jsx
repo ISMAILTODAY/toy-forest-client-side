@@ -5,25 +5,12 @@ import { Helmet } from "react-helmet";
 const UpDate = () => {
 
     const { id } = useParams()
-    console.log(id)
-
-
-
-
     const handleUpdate = (e) => {
         e.preventDefault();
         const form = e.target;
-        console.log(form)
-        // const seller = form.seller.value;
-        // const email = form.email.value;
-        // const toyName = form.toyName.value;
-        // const category = form.category.value;
-        // const photo = form.photo.value;
         const quantity = form.quantity.value;
         const price = form.price.value;
-        // const rating = form.rating.value;
         const description = form.detail.value;
-        console.log(quantity, price, description)
         const updated = { quantity, price, description }
 
         fetch(`https://toy-market-server-site.vercel.app/alldata/${id}`, {
@@ -38,7 +25,7 @@ const UpDate = () => {
                 if (data.modifiedCount > 0) {
                     alert('Data successfully updated')
                 }
-                console.log(data)
+
             })
     }
     return (

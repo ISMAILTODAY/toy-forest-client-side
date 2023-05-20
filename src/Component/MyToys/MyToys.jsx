@@ -7,7 +7,6 @@ const MyToys = () => {
     const { user, loading } = useContext(AuthContext)
     const [userToy, setUsertoy] = useState([])
     const [ascending, setAscending] = useState('1')
-    console.log(user.email)
 
     useEffect(() => {
         fetch(`https://toy-market-server-site.vercel.app/alldata?email=${user.email}&sort=${ascending}`)
@@ -22,7 +21,6 @@ const MyToys = () => {
     }
 
     const handleDelete = (id) => {
-        console.log(id)
         const proceed = confirm("Are you sure?")
         if (proceed) {
             fetch(`https://toy-market-server-site.vercel.app/alldata/${id}`, {
@@ -30,7 +28,6 @@ const MyToys = () => {
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data)
                     if (data.deletedCount > 0) {
                         alert("Delete successful")
                         const remaining = userToy.filter(toy => toy._id !== id)

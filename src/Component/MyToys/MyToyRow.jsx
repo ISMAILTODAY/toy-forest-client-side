@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 const MyToyRow = ({ toy, handleDelete }) => {
     const { seller, toyName, category, quantity, price, _id, description } = toy;
-    console.log(_id)
     return (
 
         <tr>

@@ -5,7 +5,6 @@ import { AuthContext } from '../ProviderContext/AuthProvider';
 const ToyRow = ({ toy, }) => {
     const { user } = useContext(AuthContext);
 
-    console.log(toy._id)
     const { seller, toyName, category, quantity, price, _id } = toy;
     return (
 

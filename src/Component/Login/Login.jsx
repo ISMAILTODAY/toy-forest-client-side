@@ -19,19 +19,16 @@ const Login = () => {
         const form = e.target;
         const email = form.email.value;
         const password = form.password.value;
-        console.log(email, password)
         setError('')
 
         signUp(email, password)
             .then(result => {
                 const loggedUeser = result.user;
-                console.log(loggedUeser)
                 form.reset();
                 navigate(from);
 
             })
             .catch(error => {
-                console.log(error)
                 setError("please chek Email and Password")
             })
     }
@@ -39,11 +36,9 @@ const Login = () => {
         signInWithGoogle()
             .then(result => {
                 const logged = result.user;
-                console.log(logged)
                 navigate(from);
             })
             .catch(error => {
-                console.log(error)
             })
 
     }

@@ -10,7 +10,6 @@ const AddToy = () => {
 
         e.preventDefault();
         const form = e.target;
-        console.log(form)
         const seller = form.seller.value;
         const email = form.email.value;
         const toyName = form.toyName.value;
@@ -20,7 +19,6 @@ const AddToy = () => {
         const price = form.price.value;
         const rating = form.rating.value;
         const description = form.detail.value;
-        console.log(seller, email, toyName, category, photo, quantity, price, rating, description)
         const addToys = { seller, email, toyName, category, photo, quantity, price, rating, description }
         fetch('https://toy-market-server-site.vercel.app/alldata', {
             method: "POST",
@@ -34,7 +32,6 @@ const AddToy = () => {
                 if (data.insertedId) {
                     alert("Toy added successfully")
                 }
-                console.log(data)
             })
     }
 

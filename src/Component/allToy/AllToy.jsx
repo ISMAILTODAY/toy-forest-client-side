@@ -11,7 +11,6 @@ const AllToy = () => {
             .then(res => res.json())
             .then(data => {
                 setToys(data)
-                console.log(data)
             })
     }, [])
 

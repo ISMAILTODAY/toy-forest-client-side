@@ -11,21 +11,14 @@ const Ragistration = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = e.target;
-        // console.log(form.email)
         const email = form.email.value;
         const password = form.password.value;
-        // const name = form.name.value;
-        // const photo = form.photo.value;
-        // console.log(email, password)
         createUser(email, password)
             .then(result => {
                 const user = result.user;
-                console.log(user)
-                // profileUpdate(user, name, photo)
-                // navigate('/login');
             })
             .catch(erorr => {
-                console.log(erorr)
+
             })
     }
 
@@ -33,11 +26,9 @@ const Ragistration = () => {
         signInWithGoogle()
             .then(result => {
                 const logged = result.user;
-                console.log(logged)
                 navigate(from);
             })
             .catch(error => {
-                console.log(error)
             })
     }
     return (

@@ -8,8 +8,6 @@ const ToyDetails = () => {
     const { id } = useParams();
     const [allData, setAllData] = useState([]);
 
-    console.log(id)
-
     useEffect(() => {
         fetch('https://toy-market-server-site.vercel.app/alldata')
             .then(res => res.json())
@@ -17,8 +15,7 @@ const ToyDetails = () => {
     }, [])
 
     let result = allData?.find(data => data._id == id)
-    // const { seller, toyName, email, category, quantity, price, photo, rating } = result;
-    console.log(result)
+
     return (
         <div>
             <Helmet>
