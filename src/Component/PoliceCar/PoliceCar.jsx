@@ -7,9 +7,6 @@ const PoliceCar = ({ policeCar }) => {
     const { name, picture, price, rating } = policeCar;
     return (
         <div>
-            {/* <Helmet>
-                <title>TF -Mini Police Car</title>
-            </Helmet> */}
             <div className="card w-full bg-base-100 shadow-xl">
                 <figure><img className='w-[50%]' src={picture} alt="Shoes" /></figure>
                 <div className="card-body">
